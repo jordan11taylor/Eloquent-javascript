@@ -1,10 +1,12 @@
 function isEven(n) {
-  if ((n % 10) == 0)
+  if (n == 0)
     return 'even';
-  else if((n % 10) == 1)
+  else if ((n % 10) == 1)
     return 'odd';
+  else if ((n % 10) < 0)
+    return isEven(-n);
   else
-    return isEven((n % 10) -2);
+    return isEven((n % 10) - 2);
 };
 
 console.log(isEven(50));
