@@ -1,4 +1,3 @@
-
 function isEven(n) {
   if ((n % 10) == 0)
     return 'even';
